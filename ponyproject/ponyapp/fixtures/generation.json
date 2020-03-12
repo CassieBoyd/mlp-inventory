@@ -1,0 +1,25 @@
+[
+    {
+        "model": "ponyapp.generation",
+        "pk" : 1,
+        "fields": {
+            "name": "G1"
+        } 
+    },
+
+    {
+        "model": "ponyapp.generation",
+        "pk" : 2,
+        "fields": {
+            "name": "G2"
+        } 
+    },
+
+    {
+        "model": "ponyapp.generation",
+        "pk" : 3,
+        "fields": {
+            "name": "G3"
+        } 
+    }
+]

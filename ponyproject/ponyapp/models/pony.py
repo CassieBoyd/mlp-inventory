@@ -6,7 +6,7 @@ from .generation import Generation
 class Pony (models.Model):
 
     name = models.CharField(max_length=80)
-    year = models.IntegerField(max_length=4)
+    year = models.IntegerField()
     hair_color = models.CharField(max_length=80)
     body_color = models.CharField(max_length=80)
     img_path = models.CharField(max_length=255)

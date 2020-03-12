@@ -3,7 +3,7 @@
         "model": "ponyapp.bodystyle",
         "pk" : 1,
         "fields": {
-            "body": "unicorn"
+            "body": "Unicorn"
         }
     },
 
@@ -11,7 +11,7 @@
         "model": "ponyapp.bodystyle",
         "pk" : 2,
         "fields": {
-            "body": "pegasus"
+            "body": "Pegasus"
         }  
     },
 
@@ -19,7 +19,7 @@
         "model": "ponyapp.bodystyle",
         "pk" : 3,
         "fields": {
-            "body": "earth"
+            "body": "Earth"
         }  
     }
 ]

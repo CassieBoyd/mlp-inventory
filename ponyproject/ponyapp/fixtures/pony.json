@@ -1,0 +1,46 @@
+[
+    {
+        "model": "ponyapp.pony",
+        "pk" : 1,
+        "fields": {
+            "name": "Applejack",
+            "year": 1983,
+            "hair_color": "Yellow",
+            "body_color": "Orange",
+            "img_path": "https://hosting.photobucket.com/images/i/CosplayCassie/0/apple-jack.png?width=1920&height=1080&fit=bounds",
+            "country": 2,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 2,
+        "fields": {
+            "name": "Windy",
+            "year": 1983,
+            "hair_color": "Purple and Light Blue",
+            "body_color": "Pink, Yellow, Green, Blue",
+            "img_path": "https://hosting.photobucket.com/images/i/CosplayCassie/0/windy.jpg?width=1920&height=1080&fit=bounds",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 3,
+        "fields": {
+            "name": "Skydancer",
+            "year": 1983,
+            "hair_color": "Purple and Light Blue",
+            "body_color": "Pink, Yellow, Green, Blue",
+            "img_path": "https://hosting.photobucket.com/images/i/CosplayCassie/0/skydancer.jpg?width=1920&height=1080&fit=bounds",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    }
+]
