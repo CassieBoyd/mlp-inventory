@@ -14,24 +14,26 @@
 
     {
         "model": "ponyapp.userpony",
-        "pk" : 1,
+        "pk" : 2,
         "fields": {
             "price": 20.89,
             "details": "Has initials on hooves.",
             "condition": 3,
             "pony": 2,
+            "timestamp": "2020-03-04T19:49:51.172671Z",
             "user": 1
         }  
     },
     
     {
         "model": "ponyapp.userpony",
-        "pk" : 1,
+        "pk" : 3,
         "fields": {
             "price": 9.24,
             "details": "Could be restored.",
             "condition": 1,
             "pony": 3,
+            "timestamp": "2020-03-04T19:49:51.172671Z",
             "user": 1
         }  
     } 

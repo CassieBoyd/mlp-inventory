@@ -20,8 +20,8 @@
         "fields": {
             "name": "Windy",
             "year": 1983,
-            "hair_color": "Purple and Light Blue",
-            "body_color": "Pink, Yellow, Green, Blue",
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "Pale Purple",
             "img_path": "https://hosting.photobucket.com/images/i/CosplayCassie/0/windy.jpg?width=1920&height=1080&fit=bounds",
             "country": 3,
             "body_style": 1,
@@ -35,8 +35,8 @@
         "fields": {
             "name": "Skydancer",
             "year": 1983,
-            "hair_color": "Purple and Light Blue",
-            "body_color": "Pink, Yellow, Green, Blue",
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "Yellow",
             "img_path": "https://hosting.photobucket.com/images/i/CosplayCassie/0/skydancer.jpg?width=1920&height=1080&fit=bounds",
             "country": 3,
             "body_style": 2,
