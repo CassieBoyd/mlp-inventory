@@ -1,0 +1,25 @@
+[
+    {
+        "model": "ponyapp.country",
+        "pk" : 1,
+        "fields": {
+            "name": "USA"
+        } 
+    },
+
+    {
+        "model": "ponyapp.country",
+        "pk" : 2,
+        "fields": {
+            "name": "China"
+        }
+    },
+
+    {
+        "model": "ponyapp.country",
+        "pk" : 3,
+        "fields": {
+            "name": "Hong Kong"
+        }
+    }
+]

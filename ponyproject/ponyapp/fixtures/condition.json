@@ -1,0 +1,25 @@
+[
+    {
+        "model": "ponyapp.condition",
+        "pk" : 1,
+        "fields": {
+            "category": "Bait"
+        }  
+    },
+
+    {
+        "model": "ponyapp.condition",
+        "pk" : 2,
+        "fields": {
+            "category": "Mint"
+        }  
+    },
+
+    {
+        "model": "ponyapp.condition",
+        "pk" : 3,
+        "fields": {
+            "category": "Fair"
+        }  
+    }
+]

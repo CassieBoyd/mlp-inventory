@@ -1,0 +1,40 @@
+[
+    {
+        "model": "ponyapp.userpony",
+        "pk" : 1,
+        "fields": {
+            "price": 12.45,
+            "details": "Found at a yardsale.",
+            "condition": 2,
+            "pony": 1,
+            "timestamp": "2020-03-04T19:49:51.172671Z",
+            "user": 1
+        }  
+    },
+
+    {
+        "model": "ponyapp.userpony",
+        "pk" : 2,
+        "fields": {
+            "price": 20.89,
+            "details": "Has initials on hooves.",
+            "condition": 3,
+            "pony": 2,
+            "timestamp": "2020-03-04T19:49:51.172671Z",
+            "user": 1
+        }  
+    },
+    
+    {
+        "model": "ponyapp.userpony",
+        "pk" : 3,
+        "fields": {
+            "price": 9.24,
+            "details": "Could be restored.",
+            "condition": 1,
+            "pony": 3,
+            "timestamp": "2020-03-04T19:49:51.172671Z",
+            "user": 1
+        }  
+    } 
+]

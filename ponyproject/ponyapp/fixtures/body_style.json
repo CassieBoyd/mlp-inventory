@@ -1,0 +1,25 @@
+[
+    {
+        "model": "ponyapp.bodystyle",
+        "pk" : 1,
+        "fields": {
+            "body": "Unicorn"
+        }
+    },
+
+    {
+        "model": "ponyapp.bodystyle",
+        "pk" : 2,
+        "fields": {
+            "body": "Pegasus"
+        }  
+    },
+
+    {
+        "model": "ponyapp.bodystyle",
+        "pk" : 3,
+        "fields": {
+            "body": "Earth"
+        }  
+    }
+]
