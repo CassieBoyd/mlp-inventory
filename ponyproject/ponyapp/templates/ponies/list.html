@@ -6,11 +6,9 @@
     <title>My Little Pony Itenerary</title>
   </head>
   <body>
-    <h1>Ponies</h1>
+    <h1>Add a Pony</h1>
 
-    <ol>
     {% for pony in all_ponies %}
-        <li>
             {{ pony.name }}
             Released: {{pony.year}}
             Body Color: {{pony.body_color}}
@@ -18,8 +16,6 @@
             Country: {{pony.country.name}}
             Body Style: {{pony.body_style.body}}
             Generation: {{pony.generation.name}}
-        </li>
     {% endfor %}
-    </ol>
   </body>
 </html>
