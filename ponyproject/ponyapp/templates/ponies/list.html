@@ -10,6 +10,7 @@
 
     {% for pony in all_ponies %}
             {{ pony.name }}
+            <img src="{{pony.img_path}}">
             Released: {{pony.year}}
             Body Color: {{pony.body_color}}
             Hair Color: {{pony.hair_color}}
