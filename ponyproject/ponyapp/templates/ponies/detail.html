@@ -3,23 +3,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Little Pony Itenerary</title>
+    <title>My Little Pony Inventory</title>
   </head>
   <body>
-    <h1>Add a Pony</h1>
-
-    {% for pony in all_ponies %}
-        <a href="{% url 'ponyapp:pony' pony.id %}">
-        <div> {{ pony.name }}
-            <img src="{{pony.img_path}}">
+    <img src="{{pony.img_path}}">
             Released: {{pony.year}}
             Body Color: {{pony.body_color}}
             Hair Color: {{pony.hair_color}}
             Country: {{pony.country.name}}
             Body Style: {{pony.body_style.body}}
             Generation: {{pony.generation.name}}
-        </div>
-        </a>
-    {% endfor %}
   </body>
 </html>
