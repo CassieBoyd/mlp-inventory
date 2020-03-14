@@ -11,7 +11,7 @@
     {% for pony in all_ponies %}
         <a style="text-decoration:none" href="{% url 'ponyapp:pony' pony.id %}">
         <div> {{ pony.name }}
-            <img src="{{pony.img_path}}">
+            <img class="thumbnail" src="{{pony.img_path}}">
             {% comment %} Released: {{pony.year}}
             Body Color: {{pony.body_color}}
             Hair Color: {{pony.hair_color}}
