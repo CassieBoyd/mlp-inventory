@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Little Pony Inventory</title>
+  </head>
+  <body>
+    <img src="{{pony.img_path}}"></br>
+            {{ pony.name }}</br>
+            Released: {{pony.year}}</br>
+            Body Color: {{pony.body_color}}</br>
+            Hair Color: {{pony.hair_color}}</br>
+            Made In: {{pony.country.name}}</br>
+            Body Style: {{pony.body_style.body}}</br>
+            Generation: {{pony.generation.name}}
+  </body>
+</html>

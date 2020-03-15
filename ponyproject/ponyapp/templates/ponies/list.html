@@ -1,21 +1,19 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My Little Pony Itenerary</title>
-  </head>
-  <body>
+{% extends 'shared/base.html' %}
+
+{% block content %}
     <h1>Add a Pony</h1>
 
     {% for pony in all_ponies %}
-            {{ pony.name }}
-            Released: {{pony.year}}
+        <a style="text-decoration:none" href="{% url 'ponyapp:pony' pony.id %}">
+        <div> {{ pony.name }}
+            <img class="thumbnail" src="{{pony.img_path}}">
+            {% comment %} Released: {{pony.year}}
             Body Color: {{pony.body_color}}
             Hair Color: {{pony.hair_color}}
             Country: {{pony.country.name}}
             Body Style: {{pony.body_style.body}}
-            Generation: {{pony.generation.name}}
+            Generation: {{pony.generation.name}} {% endcomment %}
+        </div>
+        </a>
     {% endfor %}
-  </body>
-</html>
+  {% endblock %}
