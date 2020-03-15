@@ -7,12 +7,6 @@
         <a style="text-decoration:none" href="{% url 'ponyapp:pony' pony.id %}">
         <div> {{ pony.name }}
             <img class="thumbnail" src="{{pony.img_path}}">
-            {% comment %} Released: {{pony.year}}
-            Body Color: {{pony.body_color}}
-            Hair Color: {{pony.hair_color}}
-            Country: {{pony.country.name}}
-            Body Style: {{pony.body_style.body}}
-            Generation: {{pony.generation.name}} {% endcomment %}
         </div>
         </a>
     {% endfor %}
