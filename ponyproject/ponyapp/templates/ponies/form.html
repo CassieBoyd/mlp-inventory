@@ -11,6 +11,7 @@
             Made In: {{pony.country.name}}</br>
             Body Style: {{pony.body_style.body}}</br>
             Generation: {{pony.generation.name}}
+            
     <form action="{% url 'ponyapp:ponies' %}" method="post">
       {% csrf_token %}
       

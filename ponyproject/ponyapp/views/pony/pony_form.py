@@ -1,7 +1,7 @@
 import sqlite3
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from ponyapp.models import Pony
+from ponyapp.models import Pony, UserPony
 
 def get_pony(pony_id):
     pony = Pony.objects.get(pk=pony_id)
