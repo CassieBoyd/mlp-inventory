@@ -12,3 +12,13 @@ def pony_list(request):
         }
 
         return render(request, template, context)
+
+    elif request.method == 'POST':
+        form_data = request.POST
+
+        new_pony = Pony.objects.create(
+            price = form_data['price'],
+            details = form_data['details']
+        )
+
+    return redirect(reverse('ponyapp:ponies'))

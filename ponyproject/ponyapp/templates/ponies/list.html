@@ -1,7 +1,7 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <h1>Add a Pony</h1>
+    <h1>Find a Pony</h1>
 
     {% for pony in all_ponies %}
         <a style="text-decoration:none" href="{% url 'ponyapp:pony' pony.id %}">
