@@ -1,11 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My Little Pony Itenerary</title>
-  </head>
-  <body>
+{% extends 'shared/base.html' %}
+
+{% block content %}
     <h1>Add a Pony</h1>
 
     {% for pony in all_ponies %}
@@ -21,5 +16,4 @@
         </div>
         </a>
     {% endfor %}
-  </body>
-</html>
+  {% endblock %}
