@@ -7,7 +7,7 @@
             "year": 1983,
             "hair_color": "Yellow",
             "body_color": "Orange",
-            "img_path": "https://i.imgur.com/LFdwNky.png",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/apple-jack_wgmmar.png",
             "country": 2,
             "body_style": 3,
             "generation": 1
@@ -22,7 +22,7 @@
             "year": 1983,
             "hair_color": "Pink, Yellow, Green, Blue",
             "body_color": "Pale Purple",
-            "img_path": "https://i.imgur.com/w679Coc.jpg",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394113/MLPInventory/windy_qru9ie.png",
             "country": 3,
             "body_style": 1,
             "generation": 1
@@ -37,7 +37,7 @@
             "year": 1983,
             "hair_color": "Pink, Yellow, Green, Blue",
             "body_color": "Yellow",
-            "img_path": "https://i.imgur.com/DvDmlks.jpg",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394315/MLPInventory/skydancer_nuk4jj.png",
             "country": 3,
             "body_style": 2,
             "generation": 1
