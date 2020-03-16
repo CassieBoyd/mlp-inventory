@@ -1,5 +1,5 @@
 import sqlite3
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from ponyapp.models import Pony, UserPony
 
 
@@ -19,7 +19,9 @@ def pony_list(request):
         new_pony = UserPony.objects.create(
             price = form_data['price'],
             details = form_data['details'],
-            condition = form_data['condition']
+            condition_id = form_data['condition'],
+            pony_id = form_data['pony'],
+            user_id = request.user.id
         )
 
     return redirect(reverse('ponyapp:ponies'))
