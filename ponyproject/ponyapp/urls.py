@@ -10,4 +10,5 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('register/', register_user, name="register"),
     path('logout/', logout_user, name='logout'),
+    path('ponies/<int:pony_id>/form', pony_form, name='pony_form'),
 ]
