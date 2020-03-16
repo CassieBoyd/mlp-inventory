@@ -18,9 +18,16 @@
           <label for="price">Price: </label>
           <input id="price" type="text" name="price"></br>
       
-      
           <label for="details">Details: </label>
           <input id="details" type="textarea" name="details"></br>
+
+          <label for="condition">Condition: </label>
+            <select id="condition" type="text" name="condition">
+                {% for condition in conditions %}
+                <option {% if condition.id == pony.condition_id %}selected{% endif %} value="{{ condition.id }}">
+                    {{ condition.category }}</option>
+                {% endfor %}
+            </select></br>
       
 
       <input type="submit" value="Add To My Ponies" />

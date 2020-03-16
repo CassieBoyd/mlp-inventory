@@ -1,6 +1,6 @@
 import sqlite3
 from django.shortcuts import render
-from ponyapp.models import Pony
+from ponyapp.models import Pony, UserPony
 
 
 def pony_list(request):
@@ -16,9 +16,10 @@ def pony_list(request):
     elif request.method == 'POST':
         form_data = request.POST
 
-        new_pony = Pony.objects.create(
+        new_pony = UserPony.objects.create(
             price = form_data['price'],
-            details = form_data['details']
+            details = form_data['details'],
+            condition = form_data['condition']
         )
 
     return redirect(reverse('ponyapp:ponies'))
