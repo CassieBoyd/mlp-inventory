@@ -6,3 +6,4 @@ from .auth.register import register_user
 from .pony.pony_form import pony_form
 from .pony.pony_form import pony_edit_form
 from .user_pony.user_pony_list import user_pony_list
+from .user_pony.user_pony_details import user_pony_details

@@ -1,0 +1,13 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+    <img src="{{pony.img_path}}"></br>
+            {{ pony.name }}</br>
+            Released: {{pony.year}}</br>
+            Body Color: {{pony.body_color}}</br>
+            Hair Color: {{pony.hair_color}}</br>
+            Made In: {{pony.country.name}}</br>
+            Body Style: {{pony.body_style.body}}</br>
+            Generation: {{user_pony.pony.generation.name}}
+            {{ user_pony.details }}
+  {% endblock %}
