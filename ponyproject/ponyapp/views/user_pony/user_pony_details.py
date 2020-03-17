@@ -19,3 +19,15 @@ def user_pony_details(request, user_pony_id):
         }
 
         return render(request, template, context)
+
+    if request.method == 'POST':
+        form_data = request.POST
+
+    if (
+        "actual_method" in form_data
+        and form_data["actual_method"] == "DELETE"
+    ):
+        user_pony = UserPony.objects.get(pk=user_pony_id)
+        user_pony.delete()
+
+        return redirect(reverse('ponyapp:user_pony_list'))

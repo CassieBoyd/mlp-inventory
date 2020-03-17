@@ -10,4 +10,9 @@
             Body Style: {{user_pony.pony.body_style.body}}</br>
             Generation: {{user_pony.pony.generation.name}}</br>
             Details: {{ user_pony.details }}
+            <form action="{% url 'ponyapp:user_pony' user_pony.id %}" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="actual_method" value="DELETE">
+    <button>Delete</button>
+</form>
   {% endblock %}
