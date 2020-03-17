@@ -26,9 +26,9 @@
         <ol class="navList">
             <li class="navList__route"><a href="{% url 'ponyapp:home' %}">Home</a></li>
             <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Search</a></li>
-            {% comment %} <li class="navList__route"><a href="{% url 'ponyapp:my_ponies' %}">My Ponies</a></li> {% endcomment %}
            
             {% if user.is_authenticated %}
+                <li class="navList__route"><a href="{% url 'ponyapp:user_pony_list' %}">My Ponies</a></li>
                 <li class="navList__route"><a href="{% url 'ponyapp:logout' %}">Logout</a></li>
                 {% else %}
                     <li class="navList__route"><a href="{% url 'ponyapp:login' %}">Login</a></li>
