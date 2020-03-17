@@ -27,8 +27,15 @@
             <li class="navList__route"><a href="{% url 'ponyapp:home' %}">Home</a></li>
             <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Search</a></li>
             {% comment %} <li class="navList__route"><a href="{% url 'ponyapp:my_ponies' %}">My Ponies</a></li> {% endcomment %}
-            <li class="navList__route"><a href="{% url 'ponyapp:login' %}">Login</a></li>
-            <li class="navList__route"><a href="{% url 'ponyapp:register' %}">Register</a></li>
+           
+            {% if user.is_authenticated %}
+                <li class="navList__route"><a href="{% url 'ponyapp:logout' %}">Logout</a></li>
+                {% else %}
+                    <li class="navList__route"><a href="{% url 'ponyapp:login' %}">Login</a></li>
+                    <li class="navList__route"><a href="{% url 'ponyapp:register' %}">Register</a></li>
+            {% endif %}
+        
+            
         </ol>
     </nav>
 
