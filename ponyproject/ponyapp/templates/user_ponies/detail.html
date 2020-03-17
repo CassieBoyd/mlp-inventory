@@ -1,13 +1,13 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <img src="{{pony.img_path}}"></br>
-            {{ pony.name }}</br>
-            Released: {{pony.year}}</br>
-            Body Color: {{pony.body_color}}</br>
-            Hair Color: {{pony.hair_color}}</br>
-            Made In: {{pony.country.name}}</br>
-            Body Style: {{pony.body_style.body}}</br>
-            Generation: {{user_pony.pony.generation.name}}
-            {{ user_pony.details }}
+    <img src="{{user_pony.pony.img_path}}"></br>
+            {{ user_pony.pony.name }}</br>
+            Released: {{user_pony.pony.year}}</br>
+            Body Color: {{user_pony.pony.body_color}}</br>
+            Hair Color: {{user_pony.pony.hair_color}}</br>
+            Made In: {{user_pony.pony.country.name}}</br>
+            Body Style: {{user_pony.pony.body_style.body}}</br>
+            Generation: {{user_pony.pony.generation.name}}</br>
+            Details: {{ user_pony.details }}
   {% endblock %}

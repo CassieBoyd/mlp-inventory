@@ -15,7 +15,7 @@ def user_pony_details(request, user_pony_id):
 
         template = 'user_ponies/detail.html'
         context = {
-            'pony': user_pony
+            'user_pony': user_pony
         }
 
         return render(request, template, context)
