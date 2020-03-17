@@ -1,0 +1,14 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+    <h1>My Ponies</h1>
+
+    {% for user_pony in all_ponies %}
+        <a style="text-decoration:none" href="{% url 'ponyapp:user_pony_list' %}">
+        <div> {{ user_pony.details }}</br>
+        {{ user_pony.pony.name }}
+            <img class="thumbnail" src="{{user_pony.pony.img_path}}">
+        </div>
+        </a></br>
+    {% endfor %}
+  {% endblock %}
