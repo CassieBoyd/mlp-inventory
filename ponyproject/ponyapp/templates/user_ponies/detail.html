@@ -13,6 +13,6 @@
             <form action="{% url 'ponyapp:user_pony' user_pony.id %}" method="POST">
     {% csrf_token %}
     <input type="hidden" name="actual_method" value="DELETE">
-    <button>Delete</button>
+    <button onclick="return confirm('Are you sure you want to delete this pony?')">Delete</button>
 </form>
   {% endblock %}

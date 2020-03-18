@@ -8,5 +8,6 @@
             Hair Color: {{pony.hair_color}}</br>
             Made In: {{pony.country.name}}</br>
             Body Style: {{pony.body_style.body}}</br>
-            Generation: {{pony.generation.name}}
-  {% endblock %}
+            Generation: {{pony.generation.name}}</br>
+           <a href="{% url 'ponyapp:pony_form' pony.id %}" ><button>Add Details</button></a>
+{% endblock %}
