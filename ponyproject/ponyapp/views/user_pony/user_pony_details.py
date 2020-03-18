@@ -20,14 +20,32 @@ def user_pony_details(request, user_pony_id):
 
         return render(request, template, context)
 
-    if request.method == 'POST':
+    elif request.method == 'POST':
         form_data = request.POST
 
-    if (
-        "actual_method" in form_data
-        and form_data["actual_method"] == "DELETE"
-    ):
-        user_pony = UserPony.objects.get(pk=user_pony_id)
-        user_pony.delete()
+        # Check if this POST is for editing a pony
+        if (
+            "actual_method" in form_data
+            and form_data["actual_method"] == "PUT"
+        ):
 
-        return redirect(reverse('ponyapp:user_pony_list'))
+            # # retrieve it first:
+            user_pony_to_update = UserPony.objects.get(pk=user_pony_id)
+
+            # # Reassign a property's value
+            user_pony_to_update.price = form_data['price']
+            user_pony_to_update.author = form_data['author']
+
+            # # Save the change to the db
+            user_pony_to_update.save()
+
+            return redirect(reverse('ponyapp:user_pony_list'))
+
+        if (
+            "actual_method" in form_data
+            and form_data["actual_method"] == "DELETE"
+        ):
+            user_pony = UserPony.objects.get(pk=user_pony_id)
+            user_pony.delete()
+
+            return redirect(reverse('ponyapp:user_pony_list'))

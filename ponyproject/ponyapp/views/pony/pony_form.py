@@ -8,6 +8,11 @@ def get_pony(pony_id):
 
     return pony
 
+def get_user_pony(user_pony_id):
+    user_pony = UserPony.objects.get(pk=user_pony_id)
+
+    return user_pony
+
 def get_conditions():
     conditions = Condition.objects.all()
     return conditions
@@ -26,12 +31,12 @@ def pony_form(request, pony_id):
         return render(request, template, context)
 
 @login_required
-def user_pony_edit_form(request, pony_id):
+def user_pony_edit_form(request, user_pony_id):
 
     if request.method == 'GET':
-        pony = get_pony(pony_id)
+        pony = get_user_pony(user_pony_id)
         # ponies = get_ponies()
-
+        
         template = 'ponies/form.html'
         context = {
             'pony': pony,
