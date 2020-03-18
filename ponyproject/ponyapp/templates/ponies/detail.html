@@ -9,5 +9,5 @@
             Made In: {{pony.country.name}}</br>
             Body Style: {{pony.body_style.body}}</br>
             Generation: {{pony.generation.name}}</br>
-           <button><a href="{% url 'ponyapp:pony_form' pony.id %}" >Add Details</a></button>
+           <a href="{% url 'ponyapp:pony_form' pony.id %}" ><button>Add Details</button></a>
 {% endblock %}
