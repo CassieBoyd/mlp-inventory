@@ -12,5 +12,7 @@ urlpatterns = [
     path('logout/', logout_user, name='logout'),
     path('ponies/<int:pony_id>/form', pony_form, name='pony_form'),
     path('user_ponies/', user_pony_list, name='user_pony_list'),
-    path('user_ponies/<int:user_pony_id>/', user_pony_details, name='user_pony')
+    path('user_ponies/<int:user_pony_id>/', user_pony_details, name='user_pony'),
+    path('user_ponies/<int:user_pony_id>/form/', user_pony_edit_form, name='user_pony_edit_form'),
+
 ]
