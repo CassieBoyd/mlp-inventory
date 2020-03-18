@@ -26,7 +26,7 @@ def pony_form(request, pony_id):
         return render(request, template, context)
 
 @login_required
-def pony_edit_form(request, pony_id):
+def user_pony_edit_form(request, pony_id):
 
     if request.method == 'GET':
         pony = get_pony(pony_id)
