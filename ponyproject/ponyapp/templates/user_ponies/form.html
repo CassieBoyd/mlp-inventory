@@ -1,0 +1,38 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+    <h1>Edit </h1>
+
+<img src="{{user_pony.pony.img_path}}"></br>
+            {{ user_pony.pony.name }}</br>
+            Released: {{user_pony.pony.year}}</br>
+            Body Color: {{user_pony.pony.body_color}}</br>
+            Hair Color: {{user_pony.pony.hair_color}}</br>
+            Made In: {{user_pony.pony.country.name}}</br>
+            Body Style: {{user_pony.pony.body_style.body}}</br>
+            Generation: {{user_pony.pony.generation.name}}
+            
+    <form action="{% url 'ponyapp:user_pony' user_pony.id%}" method="post">
+      {% csrf_token %}
+          <label for="price">Price: </label>
+          <input id="price" type="text" name="price" value="{{ user_pony.price }}"></br>
+      
+          <label for="details">Details: </label>
+          <input id="details" type="textarea" name="details" value="{{ user_pony.details }}"></br>
+
+          <label for="condition">Condition: </label>
+            <select id="condition" name="condition" value="{{ user_pony.condition }}">
+                {% for condition in conditions %}
+                <option {% if condition.id == user_pony.condition_id %}selected{% endif %} value="{{ condition.id }}">
+                    {{ condition.category }}</option>
+                {% endfor %}
+            </select></br>
+
+            <input value="{{user_pony.id}}" type="hidden" name="pony" id="pony">
+      
+
+      <input type="hidden" name="actual_method" value="PUT" />
+      <input type="submit" value="Update" />
+      
+    </form>
+  {% endblock %}
