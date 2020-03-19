@@ -35,12 +35,12 @@ def user_pony_edit_form(request, user_pony_id):
 
     if request.method == 'GET':
         pony = get_user_pony(user_pony_id)
-        # ponies = get_ponies()
+        conditions = get_conditions()
         
-        template = 'ponies/form.html'
+        template = 'user_ponies/form.html'
         context = {
-            'pony': pony,
-            # 'all_ponies': ponies
+            'user_pony': pony,
+            'conditions': conditions
         }
 
         return render(request, template, context)
