@@ -3,11 +3,5 @@
 {% block content %}
     <h1>My Collection Stats</h1>
 
-    {% for pony in all_ponies %}
-        <a style="text-decoration:none" href="{% url 'ponyapp:pony' pony.id %}">
-        <div> {{ pony.name }}
-            <img class="thumbnail" src="{{pony.img_path}}">
-        </div>
-        </a>
-    {% endfor %}
+    {{ total }}
   {% endblock %}

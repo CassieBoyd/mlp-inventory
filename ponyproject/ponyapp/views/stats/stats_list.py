@@ -1,16 +1,17 @@
 import sqlite3
 from django.shortcuts import render
 from ponyapp.models import UserPony
+from django.db.models import Sum
 
 def total_value(request):
     if request.method == 'GET':
         
-        all_prices = UserPony.objects.count()
-        print("All Prices:", all_prices)
+        total = UserPony.objects.aggregate(sum=Sum('price'))['sum']
+        print("All Prices:", total)
 
         template = 'stats/list.html'
         context = {
-            'all_prices': all_prices
+            'total': total
         }
 
         return render(request, template, context)
