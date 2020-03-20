@@ -29,6 +29,7 @@
            
             {% if user.is_authenticated %}
                 <li class="navList__route"><a href="{% url 'ponyapp:user_pony_list' %}">My Ponies</a></li>
+                <li class="navList__route"><a href="{% url 'ponyapp:stats' %}">My Stats</a></li>
                 <li class="navList__route"><a href="{% url 'ponyapp:logout' %}">Logout</a></li>
                 {% else %}
                     <li class="navList__route"><a href="{% url 'ponyapp:login' %}">Login</a></li>
