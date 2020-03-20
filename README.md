@@ -11,12 +11,12 @@ Have you ever looked at your extensive My Little Pony collection and thought "Wo
 
 - For Mac users: create your virtual environment in Terminal
 
-    `python -m venv ponyenv`
+    `python -m venv ponyenv`<br>
     `source ./ponyenv/bin/activate`
 
 - For Windows users: create your virtual environment in Command Line
 
-    `python -m venv workforceenv`
+    `python -m venv workforceenv`<br>
     `source ./workforceenv/Scripts/activate`
 
 - Install the app's dependencies
@@ -25,7 +25,7 @@ Have you ever looked at your extensive My Little Pony collection and thought "Wo
 
 - Build your database from the existing models
 
-    `python manage.py makemigrations ponyapp`
+    `python manage.py makemigrations ponyapp`<br>
     `python manage.py migrate`
 
 - Create a superuser for your local version of the app
@@ -34,11 +34,11 @@ Have you ever looked at your extensive My Little Pony collection and thought "Wo
 
 - Populate your database with initial data from fixtures files: (NOTE: every time you run this it will remove exisiting data and repopulate the tables)
 
-    `python manage.py loaddata generation`
-    `python manage.py loaddata bodystyle`
-    `python manage.py loaddata country`
-    `python manage.py loaddata condition`
-    `python manage.py loaddata pony`
+    `python manage.py loaddata generation`<br>
+    `python manage.py loaddata bodystyle`<br>
+    `python manage.py loaddata country`<br>
+    `python manage.py loaddata condition`<br>
+    `python manage.py loaddata pony`<br>
     `python manage.py loaddata userpony`
 
 - Run your dev server
