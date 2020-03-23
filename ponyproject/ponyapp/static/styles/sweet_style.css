@@ -13,13 +13,20 @@ h1 {
     list-style-type: none;
     display: flex;
     padding: 1em;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.navList a {
+    text-decoration: none;
 }
 
 .navList__route {
     margin: 0 0.5em;
 }
 
+/* LOGO */
 #logo {
     width:40%;
-    align-items: center;
+    margin: auto;
 }
