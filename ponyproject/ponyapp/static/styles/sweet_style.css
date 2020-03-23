@@ -6,7 +6,9 @@ background-size:auto;
 }
 
 h1 {
-    color: green;
+    color: rgb(55, 40, 143);
+    text-align: center;
+    font-family: 'Alice', serif;
 }
 
 .navList {
@@ -19,6 +21,7 @@ h1 {
 
 .navList a {
     text-decoration: none;
+    font-family: 'Alice', serif;
 }
 
 .navList__route {
@@ -26,7 +29,13 @@ h1 {
 }
 
 /* LOGO */
-#logo {
+/* #logo {
     width:40%;
     margin: auto;
+} */
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width:40%;
 }
