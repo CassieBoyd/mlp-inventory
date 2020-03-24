@@ -16,7 +16,7 @@
     <nav id="site-nav">
         <ol class="navList">
             <li class="navList__route"><a href="{% url 'ponyapp:home' %}">Home</a></li>
-            <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Search</a></li>
+            <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Add Pony</a></li>
            
             {% if user.is_authenticated %}
                 <li class="navList__route"><a href="{% url 'ponyapp:user_pony_list' %}">My Ponies</a></li>
