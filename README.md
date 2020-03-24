@@ -35,11 +35,11 @@ Have you ever looked at your extensive My Little Pony collection and thought "Wo
 - Populate your database with initial data from fixtures files: (NOTE: every time you run this it will remove exisiting data and repopulate the tables)
 
     `python manage.py loaddata generation`<br>
-    `python manage.py loaddata bodystyle`<br>
+    `python manage.py loaddata body_style`<br>
     `python manage.py loaddata country`<br>
     `python manage.py loaddata condition`<br>
     `python manage.py loaddata pony`<br>
-    `python manage.py loaddata userpony`
+    `python manage.py loaddata user_pony`
 
 - Run your dev server
 

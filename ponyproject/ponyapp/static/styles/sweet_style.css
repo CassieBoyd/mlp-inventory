@@ -2,7 +2,20 @@ html {
 /* background-color: rgb(196,134,237); */
 background-image: linear-gradient(23deg, rgba(196,134,237,0.788953081232493) 0%, rgba(247,161,235,0.5368522408963585) 50%, rgba(124,209,249,0.5984768907563025) 100%);
 background-repeat:no-repeat;
-background-size:auto;
+background-size: 100% 100%;
+/* background-size:auto; */
+/* height:100%; */
+}
+
+ body {
+    /* width: 700px; */
+    height:100%
+} 
+
+p {
+    display:flex;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h1 {
@@ -22,6 +35,9 @@ h1 {
 .navList a {
     text-decoration: none;
     font-family: 'Alice', serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 60px;
 }
 
 .navList__route {
@@ -38,4 +54,5 @@ h1 {
     display: block;
     margin: 0 auto;
     width:40%;
+    
 }
