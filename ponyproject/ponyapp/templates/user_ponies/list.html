@@ -1,14 +1,20 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <h1>My Ponies</h1>
+<h1>My Ponies</h1>
+<h4>Click on a pony for more information and options</h4>
 
+<div class="card-container">
     {% for user_pony in all_ponies %}
         <a style="text-decoration:none" href="{% url 'ponyapp:user_pony' user_pony.id %}">
-        <div> {{ user_pony.details }}</br>
-        {{ user_pony.pony.name }}
-            <img class="thumbnail" src="{{user_pony.pony.img_path}}">
+        <div class="card">
+        <div class="card-content">
+        <h3 class="pony-name">{{ user_pony.pony.name }}</h3>
+        <img class="thumbnail" src="{{user_pony.pony.img_path}}">
         </div>
         </a></br>
+        </div>
+        </a>
     {% endfor %}
-  {% endblock %}
+</div>
+{% endblock %}

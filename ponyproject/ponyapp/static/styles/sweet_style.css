@@ -1,0 +1,146 @@
+/* BACKGROUND */
+html {
+/* background-color: rgb(196,134,237); */
+background-image: linear-gradient(23deg, rgba(196,134,237,0.788953081232493) 0%, rgba(247,161,235,0.5368522408963585) 50%, rgba(124,209,249,0.5984768907563025) 100%);
+background-repeat:no-repeat;
+min-height:100%;
+min-width: 800px;
+}
+
+/* PARAGRAPHS */
+p {
+    display:flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgb(55, 40, 143);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADERS */
+h1, h4 {
+    color: rgb(55, 40, 143);
+    text-align: center;
+    font-family: 'Alice', serif;
+}
+
+/* NAVIGATION BAR */
+.navList {
+    list-style-type: none;
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+/* NAVIGATION LINKS */
+.navList a {
+    text-decoration: none;
+    font-family: 'Alice', serif;
+    color: rgb(55, 40, 143);
+    background-color: white;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.navList__route {
+    margin: 0 0.5em;
+}
+
+/* LOGO */
+#logo {
+    display: block;
+    margin: 0 auto;
+    width:40%;  
+}
+
+/* FLEX CONTAINER FOR CARDS */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* PONY CARDS */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    background: white;
+    margin:20px;
+}
+
+/* PONY NAME ON CARDS */
+.pony-name {
+    color: rgb(55, 40, 143);
+    text-align: center;
+    font-family: 'Alice', serif;
+    padding-bottom: 5px;
+}
+
+/* PONY IMAGES ON CARDS */
+.thumbnail {
+    max-width: 200px;
+}
+
+.full-size {
+    
+}
+
+.detail-container, .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    background: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10px;
+}
+
+.pony-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details {
+    min-width: 500px;
+}
+
+/* PONY NAME ON DETAIL CARD */
+.pony-name-detail, .pony-name-add {
+    color: rgb(55, 40, 143);
+    /* text-align: center; */
+    font-family: 'Alice', serif;
+    font-size: 150%;
+}
+
+.detail-button, .add-button, .delete-button, .edit-button {
+    font-family: 'Alice', serif;
+    color: rgb(55, 40, 143);
+    font-size: large;
+    border-radius: 60px;
+    margin: 4px;
+}
+
+.add-button {
+    align-self: center;
+}
+
+.center-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-text {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(55, 40, 143);
+    font-size: large;
+    max-width: 400px;
+}

@@ -42,5 +42,440 @@
             "body_style": 2,
             "generation": 1
         } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 4,
+        "fields": {
+            "name": "Sunlight",
+            "year": 1984,
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "Pale Turquoise",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584396256/MLPInventory/sunlight_nsnqrk.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 5,
+        "fields": {
+            "name": "Moonstone",
+            "year": 1984,
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "Pale Blue",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584396154/MLPInventory/moonstone_gty9ls.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 6,
+        "fields": {
+            "name": "Trickles",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "Yellow",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395970/MLPInventory/trickles_hfqykp.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 7,
+        "fields": {
+            "name": "Rainbow Dash",
+            "year": 2003,
+            "hair_color": "Pink, Orange, Yellow, Green, Purple, Blue",
+            "body_color": "Pale Pearly Blue",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395970/MLPInventory/rainbow-dash_n5wick.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 3
+        }
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 8,
+        "fields": {
+            "name": "Snuzzle",
+            "year": 1983,
+            "hair_color": "Pink",
+            "body_color": "Pale Grey",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395970/MLPInventory/snuzzle_wdkuve.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 9,
+        "fields": {
+            "name": "Starshine",
+            "year": 1984,
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "White",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395970/MLPInventory/starshine_nbqnx9.png",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 10,
+        "fields": {
+            "name": "Pinkie Pie",
+            "year": 2003,
+            "hair_color": "Pink",
+            "body_color": "Pearly Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/pinkypie_dhzput.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 3
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 11,
+        "fields": {
+            "name": "Applejack",
+            "year": 2003,
+            "hair_color": "Pale Yellow, Bright Green",
+            "body_color": "Pearly Red",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/apple-jack-g3_niske4.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 3
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 12,
+        "fields": {
+            "name": "Minty",
+            "year": 1983,
+            "hair_color": "White",
+            "body_color": "Pale Green",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/minty_mbxcwd.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 13,
+        "fields": {
+            "name": "Fluttershy",
+            "year": 2004,
+            "hair_color": "Pink, Yellow, Purple",
+            "body_color": "Pearly Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/fluttershy_lobkm4.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 3
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 14,
+        "fields": {
+            "name": "Blue Belle",
+            "year": 1983,
+            "hair_color": "Purple",
+            "body_color": "Pale Blue",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/blue-belle_mxfn8h.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 15,
+        "fields": {
+            "name": "Cotton Candy",
+            "year": 1983,
+            "hair_color": "Pink",
+            "body_color": "Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/cotton-candy_c9q0sg.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 16,
+        "fields": {
+            "name": "Blossom",
+            "year": 1983,
+            "hair_color": "Purple",
+            "body_color": "Purple",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/blossom_z7uhsy.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 17,
+        "fields": {
+            "name": "Butterscotch",
+            "year": 1983,
+            "hair_color": "Gold",
+            "body_color": "Yellow",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584395969/MLPInventory/butterscotch_x3dnkv.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 18,
+        "fields": {
+            "name": "Sunbeam",
+            "year": 1984,
+            "hair_color": "White, Pale Yellow",
+            "body_color": "Pale Mint",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394113/MLPInventory/sunbeam_fwsvvd.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 19,
+        "fields": {
+            "name": "Tickle",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "Purple",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/tickle_cdpw2s.png",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 20,
+        "fields": {
+            "name": "Twilight",
+            "year": 1984,
+            "hair_color": "White, Purple",
+            "body_color": "Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/twilight_qmtvhb.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 21,
+        "fields": {
+            "name": "Starflower",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "Pale Aqua",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/starflower_x4ah2o.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 22,
+        "fields": {
+            "name": "Seashell",
+            "year": 1984,
+            "hair_color": "Green",
+            "body_color": "Purple",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/seashell_zks50j.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 23,
+        "fields": {
+            "name": "Pinwheel",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/pinwheel_di4o3a.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 24,
+        "fields": {
+            "name": "Parasol",
+            "year": 1984,
+            "hair_color": "Pink, Yellow, Green, Blue",
+            "body_color": "Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/parasol_jh5zqk.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 25,
+        "fields": {
+            "name": "Medley",
+            "year": 1984,
+            "hair_color": "Green",
+            "body_color": "Green",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/medley_qzsryf.png",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 26,
+        "fields": {
+            "name": "Bow Tie",
+            "year": 1984,
+            "hair_color": "Pink",
+            "body_color": "Blue",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/bow-tie_b7wlpw.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 27,
+        "fields": {
+            "name": "Moondancer",
+            "year": 1984,
+            "hair_color": "Fuchsia, Lavender",
+            "body_color": "White",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394112/MLPInventory/moondancer_vpl2sk.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 28,
+        "fields": {
+            "name": "Glory",
+            "year": 1984,
+            "hair_color": "Purple, Blue",
+            "body_color": "White",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/glory_xxpx3n.png",
+            "country": 3,
+            "body_style": 1,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 29,
+        "fields": {
+            "name": "Firefly",
+            "year": 1984,
+            "hair_color": "Blue",
+            "body_color": "Pink",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/firefly_ypd8ov.png",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 30,
+        "fields": {
+            "name": "Flutterbye",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "Coral",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/flutterbye_ofwxoc.png",
+            "country": 3,
+            "body_style": 2,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 31,
+        "fields": {
+            "name": "Confetti",
+            "year": 1984,
+            "hair_color": "Coral, Pink, Aqua, Neon Yellow",
+            "body_color": "White",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/confetti_rjrsf7.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
+    },
+
+    {
+        "model": "ponyapp.pony",
+        "pk" : 32,
+        "fields": {
+            "name": "Bubbles",
+            "year": 1984,
+            "hair_color": "Blue",
+            "body_color": "Yellow",
+            "img_path": "https://res.cloudinary.com/proplan/image/upload/v1584394111/MLPInventory/bubbles_fvqcfp.png",
+            "country": 3,
+            "body_style": 3,
+            "generation": 1
+        } 
     }
 ]

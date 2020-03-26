@@ -5,27 +5,19 @@
 <head>
     <meta charset="utf-8">
     <title>My Little Pony Inventory</title>
+    <link rel="stylesheet" type="text/css" href={% static '/styles/sweet_style.css' %} media="screen"> 
+    <link class="center" href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
 
-    <style>
-        .navList {
-            list-style-type: none;
-            display: flex;
-            border: 1px solid lightgray;
-            padding: 1em;
-        }
-
-        .navList__route {
-            margin: 0 0.5em;
-        }
-    </style>
 </head>
 
 <body>
+<div class="banner">
+<img id="logo" src="https://res.cloudinary.com/proplan/image/upload/v1585264400/MLPInventory/mlpinventory_ztrdql.svg"></img></div>
 
     <nav id="site-nav">
         <ol class="navList">
             <li class="navList__route"><a href="{% url 'ponyapp:home' %}">Home</a></li>
-            <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Search</a></li>
+            <li class="navList__route"><a href="{% url 'ponyapp:ponies' %}">Add Pony</a></li>
            
             {% if user.is_authenticated %}
                 <li class="navList__route"><a href="{% url 'ponyapp:user_pony_list' %}">My Ponies</a></li>
