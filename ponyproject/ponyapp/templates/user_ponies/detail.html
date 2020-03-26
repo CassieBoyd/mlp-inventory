@@ -1,23 +1,32 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
+<h1>My Ponies</h1>
+
+<div class="detail-container">
     <img src="{{user_pony.pony.img_path}}"></br>
-            {{ user_pony.pony.name }}</br>
-            Released: {{user_pony.pony.year}}</br>
-            Body Color: {{user_pony.pony.body_color}}</br>
-            Hair Color: {{user_pony.pony.hair_color}}</br>
-            Made In: {{user_pony.pony.country.name}}</br>
-            Body Style: {{user_pony.pony.body_style.body}}</br>
-            Generation: {{user_pony.pony.generation.name}}</br>
-            Details: {{ user_pony.details }}
+           <h3 class="pony-name-detail">{{ user_pony.pony.name }}</h3></br>
+            <div class="detail-content">
+            <div class="detail-text"><strong>Released:</strong> {{user_pony.pony.year}}</div>
+            <div class="detail-text"><strong>Body Color:</strong> {{user_pony.pony.body_color}}</div>
+            <div class="detail-text"><strong>Hair Color:</strong> {{user_pony.pony.hair_color}}</div>
+            <div class="detail-text"><strong>Made In:</strong> {{user_pony.pony.country.name}}</div>
+            <div class="detail-text"><strong>Body Style:</strong> {{user_pony.pony.body_style.body}}</div>
+            <div class="detail-text"><strong>Generation:</strong> {{user_pony.pony.generation.name}}</div>
+            <div class="detail-text"><strong>Details:</strong> {{ user_pony.details }}</div>
+            <div class="detail-text"><strong>Price:</strong> ${{ user_pony.price }}</div>
+            <div class="detail-text"><strong>Condition:</strong> {{ user_pony.condition.category }}</div>
+            </div>
             <form action="{% url 'ponyapp:user_pony' user_pony.id %}" method="POST">
     {% csrf_token %}
     <input type="hidden" name="actual_method" value="DELETE">
-    <button onclick="return confirm('Are you sure you want to delete this pony?')">Delete</button>
+    <button class="delete-button" onclick="return confirm('Are you sure you want to delete this pony?')">Delete</button>
 </form>
 
 <form action="{% url 'ponyapp:user_pony_edit_form' user_pony.id %}" method="GET">
             {% csrf_token %}
-            <button>Edit</button>
+            <button class="edit-button">Edit</button>
         </form>
+
+</div>
   {% endblock %}

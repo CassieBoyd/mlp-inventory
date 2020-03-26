@@ -120,15 +120,21 @@ h1, h4 {
     font-size: 150%;
 }
 
-.detail-button, .add-button {
+.detail-button, .add-button, .delete-button, .edit-button {
     font-family: 'Alice', serif;
     color: rgb(55, 40, 143);
     font-size: large;
     border-radius: 60px;
+    margin: 4px;
 }
 
 .add-button {
     align-self: center;
+}
+
+.center-button {
+    display: flex;
+    flex-direction: column;
 }
 
 .detail-text {
@@ -136,4 +142,5 @@ h1, h4 {
     line-height: 1.6;
     color: rgb(55, 40, 143);
     font-size: large;
+    max-width: 400px;
 }

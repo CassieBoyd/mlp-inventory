@@ -1,18 +1,18 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-<h1>{{ pony.name }}</h1>
+<h1>Add a Pony</h1>
 <div class="detail-container">
     <img class="full-size" src="{{pony.img_path}}"></br>
         <h3 class="pony-name-detail">{{ pony.name }}</h3></br>
-            <div class="details">
-            <div class="detail-text"><strong>Released:</strong> {{pony.year}}</div>
-            <div class="detail-text"><strong>Body Color:</strong> {{pony.body_color}}</div>
-            <div class="detail-text"><strong>Hair Color:</strong> {{pony.hair_color}}</div>
-            <div class="detail-text"><strong>Made In:</strong> {{pony.country.name}}</div>
-            <div class="detail-text"><strong>Body Style:</strong> {{pony.body_style.body}}</div>
-            <div class="detail-text"><strong>Generation:</strong> {{pony.generation.name}}</div>
-           <a href="{% url 'ponyapp:pony_form' pony.id %}" >
+            <div class="detail-content">
+                <div class="detail-text"><strong>Released:</strong> {{pony.year}}</div>
+                <div class="detail-text"><strong>Body Color:</strong> {{pony.body_color}}</div>
+                <div class="detail-text"><strong>Hair Color:</strong> {{pony.hair_color}}</div>
+                <div class="detail-text"><strong>Made In:</strong> {{pony.country.name}}</div>
+                <div class="detail-text"><strong>Body Style:</strong> {{pony.body_style.body}}</div>
+                <div class="detail-text"><strong>Generation:</strong> {{pony.generation.name}}</div>
+                <a href="{% url 'ponyapp:pony_form' pony.id %}" >
            </div>
            <button class="detail-button">Add Details</button></a>
 </div>
