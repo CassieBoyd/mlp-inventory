@@ -57,8 +57,10 @@ h1, h4 {
 /* FLEX CONTAINER FOR CARDS */
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* PONY CARDS */

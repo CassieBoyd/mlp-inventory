@@ -1,48 +1,48 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <h1>Edit Pony</h1>
+<h1>Edit Pony</h1>
 
 <div class="form-container">
-<img src="{{user_pony.pony.img_path}}"></br>
-            <h3 class="pony-name-add">{{ user_pony.pony.name }}</h3></br>
-        <div class="detail-content">
-            <div class="detail-text"><strong>Released:</strong> {{user_pony.pony.year}}</div>
-            <div class="detail-text"><strong>Body Color:</strong> {{user_pony.pony.body_color}}</div>
-            <div class="detail-text"><strong>Hair Color:</strong> {{user_pony.pony.hair_color}}</div>
-            <div class="detail-text"><strong>Made In:</strong> {{user_pony.pony.country.name}}</div>
-            <div class="detail-text"><strong>Body Style:</strong> {{user_pony.pony.body_style.body}}</div>
-            <div class="detail-text"><strong>Generation:</strong> {{user_pony.pony.generation.name}}</div>
-            
+  <img src="{{user_pony.pony.img_path}}"></br>
+  <h3 class="pony-name-add">{{ user_pony.pony.name }}</h3></br>
+  <div class="detail-content">
+    <div class="detail-text"><strong>Released:</strong> {{user_pony.pony.year}}</div>
+    <div class="detail-text"><strong>Body Color:</strong> {{user_pony.pony.body_color}}</div>
+    <div class="detail-text"><strong>Hair Color:</strong> {{user_pony.pony.hair_color}}</div>
+    <div class="detail-text"><strong>Made In:</strong> {{user_pony.pony.country.name}}</div>
+    <div class="detail-text"><strong>Body Style:</strong> {{user_pony.pony.body_style.body}}</div>
+    <div class="detail-text"><strong>Generation:</strong> {{user_pony.pony.generation.name}}</div>
+
     <form action="{% url 'ponyapp:user_pony' user_pony.id%}" method="post">
       {% csrf_token %}
       <div class="detail-text">
-          <label for="price"><strong>Price:</strong> </label>
-          <input id="price" type="text" name="price" value="{{ user_pony.price }}"></br>
-        </div>
-      
-      <div class="detail-text">
-          <label for="details"><strong>Details:</strong> </label>
-          <input id="details" type="textarea" name="details" value="{{ user_pony.details }}"></br>
-        </div>
-
-      <div class="detail-text">
-          <label for="condition"><strong>Condition:</strong> </label>
-            <select id="condition" name="condition" value="{{ user_pony.condition }}">
-                {% for condition in conditions %}
-                <option {% if condition.id == user_pony.condition_id %}selected{% endif %} value="{{ condition.id }}">
-                    {{ condition.category }}</option>
-                {% endfor %}
-            </select></br>
+        <label for="price"><strong>Price:</strong> </label>
+        <input id="price" type="text" name="price" value="{{ user_pony.price }}"></br>
       </div>
 
-            <input value="{{user_pony.id}}" type="hidden" name="pony" id="pony">
-      
-<div class="center-button">
-      <input type="hidden" name="actual_method" value="PUT" />
-      <input class="add-button" type="submit" value="Update" />
+      <div class="detail-text">
+        <label for="details"><strong>Details:</strong> </label>
+        <input id="details" type="textarea" name="details" value="{{ user_pony.details }}"></br>
+      </div>
 
-</div>      
+      <div class="detail-text">
+        <label for="condition"><strong>Condition:</strong> </label>
+        <select id="condition" name="condition" value="{{ user_pony.condition }}">
+          {% for condition in conditions %}
+          <option {% if condition.id == user_pony.condition_id %}selected{% endif %} value="{{ condition.id }}">
+            {{ condition.category }}</option>
+          {% endfor %}
+        </select></br>
+      </div>
+
+      <input value="{{user_pony.id}}" type="hidden" name="pony" id="pony">
+
+      <div class="center-button">
+        <input type="hidden" name="actual_method" value="PUT" />
+        <input class="add-button" type="submit" value="Update" />
+
+      </div>
     </form>
-</div>
+  </div>
   {% endblock %}
