@@ -1,13 +1,18 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <img src="{{pony.img_path}}"></br>
-            {{ pony.name }}</br>
-            Released: {{pony.year}}</br>
-            Body Color: {{pony.body_color}}</br>
-            Hair Color: {{pony.hair_color}}</br>
-            Made In: {{pony.country.name}}</br>
-            Body Style: {{pony.body_style.body}}</br>
-            Generation: {{pony.generation.name}}</br>
-           <a href="{% url 'ponyapp:pony_form' pony.id %}" ><button>Add Details</button></a>
+<div class="detail-container">
+    <img class="full-size" src="{{pony.img_path}}"></br>
+            <h3 class="pony-name-detail">{{ pony.name }}</h3></br>
+            <div class="details">
+            <p>Released: {{pony.year}}</p>
+            <p>Body Color: {{pony.body_color}}</p>
+            <p>Hair Color: {{pony.hair_color}}</p>
+            <p>Made In: {{pony.country.name}}</p>
+            <p>Body Style: {{pony.body_style.body}}</p>
+            <p>Generation: {{pony.generation.name}}</p>
+           <a href="{% url 'ponyapp:pony_form' pony.id %}" >
+           </div>
+           <button class="detail-button">Add Details</button></a>
+</div>
 {% endblock %}
