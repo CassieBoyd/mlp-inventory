@@ -87,7 +87,7 @@ h1, h4 {
     
 }
 
-.detail-container {
+.detail-container, .form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,13 @@ h1, h4 {
     margin-left: 20%;
     margin-right: 20%;
     padding-bottom: 10px;
+}
+
+.pony-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .details {
@@ -118,6 +125,10 @@ h1, h4 {
     color: rgb(55, 40, 143);
     font-size: large;
     border-radius: 60px;
+}
+
+.add-button {
+    align-self: center;
 }
 
 .detail-text {

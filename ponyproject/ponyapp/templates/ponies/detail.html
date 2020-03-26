@@ -1,9 +1,10 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
+<h1>{{ pony.name }}</h1>
 <div class="detail-container">
     <img class="full-size" src="{{pony.img_path}}"></br>
-            <h3 class="pony-name-detail">{{ pony.name }}</h3></br>
+        <h3 class="pony-name-detail">{{ pony.name }}</h3></br>
             <div class="details">
             <div class="detail-text"><strong>Released:</strong> {{pony.year}}</div>
             <div class="detail-text"><strong>Body Color:</strong> {{pony.body_color}}</div>

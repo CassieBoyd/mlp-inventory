@@ -3,37 +3,44 @@
 {% block content %}
     <h1>Add to My Ponies</h1>
 
-<div class="detail-container">
+<div class="form-container">
 <img src="{{pony.img_path}}"></br>
             <h3 class="pony-name-add">{{ pony.name }}</h3></br>
-            Released: {{pony.year}}</br>
-            Body Color: {{pony.body_color}}</br>
-            Hair Color: {{pony.hair_color}}</br>
-            Made In: {{pony.country.name}}</br>
-            Body Style: {{pony.body_style.body}}</br>
-            Generation: {{pony.generation.name}}
+        <div class="detail-content">
+            <div class="detail-text"><strong>Released:</strong> {{pony.year}}</div>
+            <div class="detail-text"><strong>Body Color:</strong> {{pony.body_color}}</div>
+            <div class="detail-text"><strong>Hair Color:</strong> {{pony.hair_color}}</div>
+            <div class="detail-text"><strong>Made In:</strong> {{pony.country.name}}</div>
+            <div class="detail-text"><strong>Body Style:</strong> {{pony.body_style.body}}</div>
+            <div class="detail-text"><strong>Generation:</strong> {{pony.generation.name}}</div>
             
-    <form action="{% url 'ponyapp:ponies' %}" method="post">
+    <form class="pony-form" action="{% url 'ponyapp:ponies' %}" method="post">
       {% csrf_token %}
       
-          <label for="price">Price: $</label>
+      <div class="detail-text">
+          <label for="price"><strong>Price: $</strong></label>
           <input id="price" type="text" name="price"></br>
+      </div>
       
-          <label for="details">Details: </label>
+      <div class="detail-text">
+          <label for="details"><strong>Details:</strong></label>
           <input id="details" type="textarea" name="details"></br>
+      </div>
 
-          <label for="condition">Condition: </label>
+      <div class="detail-text">
+          <label for="condition"><strong>Condition:</strong> </label>
             <select id="condition" type="text" name="condition">
                 {% for condition in conditions %}
                 <option {% if condition.id == pony.condition_id %}selected{% endif %} value="{{ condition.id }}">
                     {{ condition.category }}</option>
                 {% endfor %}
             </select></br>
-
+      </div>
             <input value="{{pony.id}}" type="hidden" name="pony" id="pony">
       
 
       <input class="add-button" type="submit" value="Add To My Ponies" />
     </form>
+          </div>
     </div>
   {% endblock %}
