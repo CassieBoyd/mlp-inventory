@@ -2,15 +2,8 @@ html {
 /* background-color: rgb(196,134,237); */
 background-image: linear-gradient(23deg, rgba(196,134,237,0.788953081232493) 0%, rgba(247,161,235,0.5368522408963585) 50%, rgba(124,209,249,0.5984768907563025) 100%);
 background-repeat:no-repeat;
-background-size: 100% 100%;
-/* background-size:auto; */
-/* height:100%; */
+min-height:100%;
 }
-
- body {
-    /* width: 700px; */
-    height:100%
-} 
 
 p {
     display:flex;
@@ -48,16 +41,10 @@ h1, h4 {
 }
 
 /* LOGO */
-/* #logo {
-    width:40%;
-    margin: auto;
-} */
-
 #logo {
     display: block;
     margin: 0 auto;
-    width:40%;
-    
+    width:40%;  
 }
 
 .card-container {
@@ -72,15 +59,15 @@ h1, h4 {
     border-radius: 20px;
     background: white;
     margin:20px;
-  }
+}
 
-  .pony-name {
+.pony-name {
     color: rgb(55, 40, 143);
     text-align: center;
     font-family: 'Alice', serif;
-    margin-top: 5px;
-  }
+    padding-bottom: 5px;
+}
 
-  .card img {
+.card img {
     max-width: 200px;
-  }
+}
