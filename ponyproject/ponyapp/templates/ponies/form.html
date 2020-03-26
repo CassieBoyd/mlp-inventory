@@ -3,8 +3,9 @@
 {% block content %}
     <h1>Add to My Ponies</h1>
 
+<div class="detail-container">
 <img src="{{pony.img_path}}"></br>
-            {{ pony.name }}</br>
+            <h3 class="pony-name-add">{{ pony.name }}</h3></br>
             Released: {{pony.year}}</br>
             Body Color: {{pony.body_color}}</br>
             Hair Color: {{pony.hair_color}}</br>
@@ -32,6 +33,7 @@
             <input value="{{pony.id}}" type="hidden" name="pony" id="pony">
       
 
-      <input type="submit" value="Add To My Ponies" />
+      <input class="add-button" type="submit" value="Add To My Ponies" />
     </form>
+    </div>
   {% endblock %}
