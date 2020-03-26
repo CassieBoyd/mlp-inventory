@@ -37,6 +37,7 @@ h1, h4 {
 .navList a {
     text-decoration: none;
     font-family: 'Alice', serif;
+    color: rgb(55, 40, 143);
     background-color: white;
     padding: 10px;
     border-radius: 60px;
@@ -109,10 +110,19 @@ h1, h4 {
     color: rgb(55, 40, 143);
     /* text-align: center; */
     font-family: 'Alice', serif;
+    font-size: 150%;
 }
 
 .detail-button {
     font-family: 'Alice', serif;
+    color: rgb(55, 40, 143);
+    font-size: large;
+    border-radius: 60px;
+}
+
+.detail-text {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
     color: rgb(55, 40, 143);
     font-size: large;
 }
